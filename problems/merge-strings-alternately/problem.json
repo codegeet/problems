@@ -1,0 +1,42 @@
+{
+  "problem_id": "merge-strings-alternately",
+  "name": "Слияние строк поочерёдно",
+  "number": 1,
+  "description": "{description.md}",
+  "difficulty": "EASY",
+  "metadata": {
+    "params": [
+      {
+        "name": "word1"
+      },
+      {
+        "name": "word2"
+      }
+    ]
+  },
+  "snippets": [
+    {
+      "snippet": "{snippet.kt}",
+      "language": "KOTLIN",
+      "call" : "new Solution().mergeAlternately(args[1], args[2])"
+    },
+    {
+      "snippet": "{snippet.java}",
+      "language": "JAVA",
+      "call" : "Solution().mergeAlternately(args[1], args[2])"
+    }],
+  "cases": [
+    {
+      "input": "abc\nxyz",
+      "expected": "axbycz"
+    },
+    {
+      "input": "ab\nmpqr",
+      "expected": "ambpqr"
+    },
+    {
+      "input": "abcde\nyz",
+      "expected": "aybzcde"
+    }
+  ]
+}
