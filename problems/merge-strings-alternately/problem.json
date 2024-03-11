@@ -37,6 +37,26 @@
     {
       "input": "abcde\nyz",
       "expected": "aybzcde"
+    },
+    {
+      "input": "a\nb",
+      "expected": "ab"
+    },
+    {
+      "input": "a\nbcd",
+      "expected": "abcd"
+    },
+    {
+      "input": "abcd\nx",
+      "expected": "axbcd"
+    },
+    {
+      "input": "a\na",
+      "expected": "aa"
+    },
+    {
+      "input": "abcdefghijklmnopqrstuvwxyz\nabcdefghijklmnopqrstuvwxyz",
+      "expected": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz"
     }
   ]
 }
